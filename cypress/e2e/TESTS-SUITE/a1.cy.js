@@ -16,7 +16,7 @@ describe('REPORTS - HTML-', () => {
       });
 
       it('USANDO COMMANDS', () => {
-        cy.CHECK-VALIDATOR-LOGIN()
+        cy.VALIDATOR_LOGIN()
       });
 
     });
