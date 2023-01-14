@@ -28,6 +28,10 @@ describe('REPORTS - HTML-', () => {
         cy.get('a > img').should("be.visible")
       });
 
+      it('FEATURE ITEMS', () => {
+        cy.get('.features_items > .title').should("contain","Features Items")
+      });
+
         
 
 
