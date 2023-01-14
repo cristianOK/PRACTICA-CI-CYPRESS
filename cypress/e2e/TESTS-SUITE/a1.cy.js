@@ -3,6 +3,7 @@ import POM from "./POM";
 
 
 describe('REPORTS - HTML-', () => {
+
     beforeEach(() => {     
         cy.visit("https://automationexercise.com").title().should("eq","Automation Exercise")
       });
@@ -22,5 +23,25 @@ describe('REPORTS - HTML-', () => {
       it('VALIDANDO ESTE TEXTO DE PRUEBA', () => {
         cy.get('.active > :nth-child(1) > p').should("contain","API testing either they are at beginner")
       });
+    
+      it('IMAGEN VISIBLE', () => {
+        cy.get('a > img').should("be.visible")
+      });
+
+        
+
+
+
+
+
+
+
+
+
 
     });
+
+     
+
+
+     
