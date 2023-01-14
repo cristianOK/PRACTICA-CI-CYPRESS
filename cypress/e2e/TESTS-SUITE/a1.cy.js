@@ -23,4 +23,9 @@ describe('REPORTS - HTML-', () => {
         cy.get('.active > :nth-child(1) > p').should("contain","API testing either they are at beginner")
       });
 
+      it.only('PRACTICANDO......', () => {     
+        cy.get('.active > :nth-child(1) > h1').should("contain","AutomationExercise").should("be.visible")
+
+      });
+
     });
