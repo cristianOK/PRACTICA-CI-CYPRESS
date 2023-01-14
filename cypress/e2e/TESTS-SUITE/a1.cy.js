@@ -19,4 +19,8 @@ describe('REPORTS - HTML-', () => {
         cy.VALIDATOR_LOGIN()
       });
 
+      it('VALIDANDO ESTE TEXTO DE PRUEBA', () => {
+        cy.get('.active > :nth-child(1) > p').should("contain","API testing either they are at beginner")
+      });
+
     });
