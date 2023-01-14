@@ -32,6 +32,10 @@ describe('REPORTS - HTML-', () => {
         cy.get('.features_items > .title').should("contain","Features Items")
       });
 
+      it.only('SUSCRIPCION CHECK VISIBLE', () => {
+        cy.get('.single-widget > h2').contains("Subscription").should("be.visible")
+      });
+
         
 
 
