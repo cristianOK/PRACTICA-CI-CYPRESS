@@ -23,9 +23,15 @@ describe('REPORTS - HTML-', () => {
         cy.get('.active > :nth-child(1) > p').should("contain","API testing either they are at beginner")
       });
 
-      it.only('PRACTICANDO......', () => {     
+      it('PRACTICANDO......', () => {     
         cy.get('.active > :nth-child(1) > h1').should("contain","AutomationExercise").should("be.visible")
 
       });
+
+      it.only('VERIFICANDO TITULÑO H2', () => {
+        cy.get('.left-sidebar').contains("Category").should("be.visible")
+      });
+
+
 
     });
