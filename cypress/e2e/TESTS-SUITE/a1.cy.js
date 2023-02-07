@@ -28,7 +28,7 @@ describe('REPORTS - HTML-', () => {
 
       });
 
-      it.only('VERIFICANDO TITULÑO H2', () => {
+      it('VERIFICANDO TITULÑO H2', () => {
         cy.get('.left-sidebar').contains("Category").should("be.visible")
       });
 
