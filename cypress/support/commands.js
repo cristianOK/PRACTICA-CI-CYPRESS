@@ -12,6 +12,16 @@ Cypress.Commands.add("VALIDATOR_LOGIN",()=>{
 
 })
 
+Cypress.Commands.add("LOGEARSE",()=>{
+    cy.fixture("a4_FIXTURE").then((a4)=>{
+        cy.get(a4.Campo_Email).type(a4.Email)
+        cy.get(a4.campo_password).type(a4.password)
+        cy.get(a4.botonLOGIN).click()
+        cy.get(a4.NAME_VISIBLE).should("contain","Logged in as pablo")
+  })
+})
+
+
 
 
 

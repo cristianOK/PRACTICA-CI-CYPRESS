@@ -1,0 +1,13 @@
+{
+   "Campo_Email": ".login-form > form > [type='email']",
+   "Email": "pablo222@gmail.com",
+   "campo_password": "[type='password']",
+   "password": "losloros222",
+   "botonLOGIN": ".login-form > form > .btn",
+   "NAME_VISIBLE": ":nth-child(10) > a"
+
+
+
+
+
+}
