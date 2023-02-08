@@ -10,6 +10,8 @@ describe('USER HISTORY N°53', () => {
  
       it('TC N°1: VALIDAR LOGIN CON DATOS VALIDOS', () => {
         cy.LOGEARSE()
+        cy.location("protocol").should("contains","https")
+
         
       });
 
